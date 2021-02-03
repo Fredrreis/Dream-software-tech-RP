@@ -1,0 +1,233 @@
+/*as cores estao desse jeito porque ainda nao tenho as imagens para 
+cada pagina*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Archivo, sans-serif;
+}
+
+hr {
+  width: 95%;
+  height: 1px;
+  margin: 1rem;
+}
+
+/*nav*/
+nav {
+  height: 12vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(175, 88, 228, 1) 0%,
+    rgba(106, 33, 153, 1) 43%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 0.8rem 0.8rem;
+}
+nav h3 {
+  color: #fff;
+}
+
+/*nav end*/
+
+/*article*/
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem 0rem;
+}
+
+article img {
+  background: grey;
+  width: 96vw;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.1rem;
+}
+
+/*article end*/
+
+/*section*/
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+section div article {
+  display: flex;
+  flex-flow: column;
+}
+
+section img {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+section p {
+  width: 78%;
+  text-align: center;
+  padding: 10px;
+}
+
+section a {
+  text-decoration: none;
+  color: black;
+  background: none;
+}
+
+section input {
+  width: 150px;
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  background: none;
+  border-radius: 15px;
+  border-style: none;
+  border: solid 3px #461666;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+section input:hover {
+  transition: 0.25s;
+  background: #461666;
+  color: whitesmoke;
+}
+
+/*section end*/
+
+/*main*/
+
+h2 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 22px;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+main a img {
+  border-radius: 10px;
+  width: 95%;
+  max-width: 320px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+main a img:hover{
+  transform: scale(1.1);
+  transition: 0.25s;
+   width: 100%;
+}
+
+main a p {
+  margin-top: 10px;
+  margin-bottom: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+
+main div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column;
+}
+
+/*main end*/
+
+/*footer*/
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #461666;
+}
+
+footer img {
+  width: 70px;
+  border-radius: 10px;
+}
+
+/*footer end*/
+
+/* Container edit */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  min-height: 100vh;
+  background: #fff;
+  border-radius: 0.8rem;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.title {
+  margin: 0.8rem;
+  color: #270c38;
+  font-size: 15px;
+  text-align: center;
+  margin: 1rem;
+}
+
+.title h1 {
+  font-family: Poppins;
+  font-weight: 400;
+}
+
+
+@media (min-width: 600px) {
+  .title {
+    font-size: 25px;
+    margin: 4rem;
+  }
+  section {
+    flex-direction: row wrap;
+  }
+
+  section div {
+    width: 80%;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+  main div {
+    flex-flow: row wrap;
+  }
+}

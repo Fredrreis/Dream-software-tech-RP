@@ -1,0 +1,226 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Archivo, sans-serif;
+  box-sizing: border-box;
+}
+
+/*header*/
+header {
+  height: 12vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(175, 88, 228, 1) 0%,
+    rgba(106, 33, 153, 1) 43%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 0.8rem 0.8rem;
+  margin-bottom: 17px;
+  padding: 1rem;
+}
+
+header h3 {
+  color: #fff;
+}
+
+/*menu dropdown*/
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  min-width: 160px;
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+/*menu dropdown end*/
+/*header end*/
+
+/*body*/
+body {
+  background: whitesmoke;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+/*form*/
+form {
+  width: 100%;
+  position: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+/*main inputs and labels*/
+main {
+  background: whitesmoke;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 40px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+input:hover {
+  border-color: rgba(106, 33, 153, 1) 43%;
+}
+
+label {
+  color: black;
+  flex-direction: column;
+}
+
+textarea {
+  border-radius: 5px;
+  color: black;
+  width: 100%;
+  resize: vertical;
+}
+/*main inputs and labels end*/
+
+/*section button*/
+section {
+  justify-content: center;
+  align-content: center;
+  display: flex;
+}
+
+section button {
+  background-color: black;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 14px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 1rem;
+  border: 3px solid white;
+  display: flex;
+}
+
+section button:hover {
+  background-color: green;
+  color: white;
+  border: none;
+}
+/*section button end*/
+/*form end*/
+/*body end*/
+
+/*foot*/
+/*footer*/
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #451666;
+}
+
+/*img Dream Space*/
+img {
+  width: 100%;
+  max-width: 70px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+/*foot end*/
+/*footer end*/
+
+/*media*/
+@media (min-width: 600px) {
+  header {
+    padding: 3rem;
+  }
+
+  header h3 {
+    font-size: 32px;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main div {
+    width: 50%;
+  }
+
+  main label {
+    font-size: 23px;
+  }
+
+  main input {
+    height: 50px;
+    font-size: 23px;
+    width: 100%;
+  }
+
+  textarea {
+    height: 300px;
+    font-size: 23px;
+    width: 100%;
+  }
+
+  section button {
+    font-size: 23px;
+    padding: 20px 40px;
+    margin-top: 30px;
+  }
+
+  footer img {
+    width: 100px;
+  }
+} /*media end*/
